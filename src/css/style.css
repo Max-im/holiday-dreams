@@ -1,0 +1,190 @@
+/*@import reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/*!!!!!!!!!!!!*/
+body {
+  font-family: 'Montserrat', 'RobotoLight', sans-serif, arial;
+  font-weight: bold; }
+
+/*@import fonts*/
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RobotoLight"; */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RobotoMedium"; */
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/*@import media*/
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*@import var and mixin*/
+/*colors*/
+/*======================
+|		STYLE MAP      |
+========================
+1. common part
+2. header
+3. howItWorks SECTION
+4. meetPartners SECTION
+5. discoverIdias
+6. FOOTER
+
+======================*/
+/*      1. common part       */
+.container {
+  width: 320px;
+  margin: 0 auto; }
+
+.sectionHeader {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin: 42px 0 20px 0; }
+
+/*      2. header           */
+.header {
+  width: 100%;
+  background: url(../img/head..jpg);
+  background-position: center top;
+  background-size: cover;
+  color: #fff;
+  padding: 35px 0px 138px 0px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*top links start*/
+  /*top links end*/
+  /*main text start*/
+  /*main text end*/
+  /*button start*/
+  /*button end*/ }
+  .header .logInBlock {
+    margin: 0 0 150px 17px; }
+    .header .logInBlock a {
+      color: #fff;
+      font-size: 17px;
+      display: inline-block;
+      margin: 0 10px; }
+  .header .signUp {
+    border: 1px solid #fff;
+    border-top: 2px solid #fff;
+    -webkit-border-radius: 40px;
+            border-radius: 40px;
+    padding: 15px 25px; }
+  .header .headParag {
+    margin: 0 0 41px 14px;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; }
+  .header .mainHeader {
+    margin: 0 0 18px 0;
+    font-size: 39px;
+    text-indent: 21px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    line-height: 45px;
+    /*font-stretch:extra-condensed;*/ }
+    .header .mainHeader span {
+      letter-spacing: -4.2px; }
+  .header .discParag {
+    font-family: "RobotoLight", arial;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.2px;
+    margin: 0 0 25px 0; }
+  .header .buttonFindHolliday {
+    display: block;
+    background: #ff4e50;
+    padding: 16px 50px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px; }
+
+/*      3. howItWorks SECTION      */
+/*      4. meetPartners SECTION         */
+/*      5. discoverIdias         */
+/*      6. FOOTER         */
