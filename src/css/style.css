@@ -124,8 +124,10 @@ body {
   color: #333;
   font-weight: bold;
   text-align: center;
-  margin: 37px 0 20px 0;
-  letter-spacing: -.8px; }
+  margin: 37px 0 15px 0;
+  letter-spacing: -.8px;
+  display: inline-block;
+  width: 97%; }
 
 /*      2. header           */
 .header {
@@ -187,6 +189,118 @@ body {
     font-size: 14px; }
 
 /*      3. howItWorks SECTION      */
+.howItWorks {
+  text-align: center; }
+  .howItWorks .steps {
+    display: inline-block;
+    width: 94%;
+    height: 240px;
+    position: relative;
+    text-align: left;
+    margin: 0 0 5px 0;
+    -webkit-border-radius: 7px;
+            border-radius: 7px;
+    border: 1px solid #dadada; }
+  .howItWorks .stepsWrapper {
+    padding: 0 23px 20px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    bottom: 0; }
+  .howItWorks .stepButton {
+    display: inline-block;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    background: #ff4e50;
+    margin: 0 0 15px 2px;
+    padding: 5px 11px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal; }
+  .howItWorks .stepsHeader {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    line-height: 29px;
+    letter-spacing: -.5px; }
+  .howItWorks .stepsParag {
+    display: block;
+    color: #ccc;
+    font-family: "RobotoLight", arial;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -.5px;
+    text-align: justify; }
+  .howItWorks .step1 {
+    background: url(../img/step1.jpg);
+    background-size: cover;
+    background-position: center; }
+  .howItWorks .step2 {
+    background: url(../img/step2.jpg);
+    background-size: cover;
+    background-position: center; }
+  .howItWorks .step3 {
+    background: url(../img/step3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0; }
+
 /*      4. meetPartners SECTION         */
+.meetPartners {
+  text-align: center; }
+  .meetPartners .partner {
+    padding: 0 50px 27px 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%; }
+  .meetPartners .partnerPhoto {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 22px auto;
+    position: relative; }
+    .meetPartners .partnerPhoto img {
+      width: 100%; }
+  .meetPartners .partnerIcon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -8px;
+    right: -2px;
+    border: 4px solid #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-size: cover;
+    background-position: center; }
+  .meetPartners .partnerIcon1 {
+    background-image: url(../img/parthnerIcon1.png); }
+  .meetPartners .partnerIcon2 {
+    background-image: url(../img/parthnerIcon2.png); }
+  .meetPartners .partnerIcon3 {
+    background-image: url(../img/parthnerIcon3.png); }
+  .meetPartners .partnerIcon4 {
+    background-image: url(../img/parthnerIcon4.png); }
+  .meetPartners .partnerName {
+    color: #333;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin: 0 0 15px 0; }
+  .meetPartners .aboutPartner {
+    font-size: 14px;
+    font-family: "RobotoLight", arial;
+    font-weight: lighter;
+    color: #666;
+    line-height: 16px; }
+  .meetPartners .buttonPartners {
+    display: inline-block;
+    color: #ff4e50;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    border: 3px solid #ff4e50;
+    padding: 10px 70px;
+    font-size: 14px; }
+
 /*      5. discoverIdias         */
 /*      6. FOOTER         */

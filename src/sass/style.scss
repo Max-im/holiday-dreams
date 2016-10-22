@@ -27,8 +27,10 @@
 	color: $mainColor;
 	font-weight: bold;
 	text-align: center;
-	margin: 37px 0 20px 0;
+	margin: 37px 0 15px 0;
 	letter-spacing: -.8px;
+	display: inline-block;
+	width: 97%;
 }
 
 
@@ -106,14 +108,151 @@
 		font-size: 14px;
 	}
 	/*button end*/
+}
 
- 
+/*      3. howItWorks SECTION      */
 
+.howItWorks{
+		text-align: center;
+	.steps{
+		display: inline-block;
+		width: 94%;
+		height: 240px;
+		position: relative;
+		text-align: left;
+		margin: 0 0 5px 0;
+		border-radius: 7px;
+		border: 1px solid #dadada;
+	}
+	.stepsWrapper{
+		padding: 0 23px 20px 20px;
+		box-sizing: border-box;
+		position: absolute;
+		bottom: 0;
+	}
+	.stepButton{
+		display: inline-block;
+		border-radius: 30px;
+		background: $tomato;
+		margin: 0 0 15px 2px;
+		padding: 5px 11px;
+		color: #fff;
+		font-size: 10px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: normal;
+	}
+	.stepsHeader{
+		color: #fff;
+		font-size: 24px;
+		margin: 0 0 10px 0;
+		line-height: 29px;
+		letter-spacing: -.5px;
+	}
+	.stepsParag{
+		display: block;
+		color: $howItWorksColor;
+		font-family: "RobotoLight", arial;
+		font-weight: lighter;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: -.5px;
+		text-align: justify;
+	}
+
+	.step1{
+		background: url(../img/step1.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+	.step2{
+		background: url(../img/step2.jpg);
+		background-size: cover;	
+		background-position: center;
+	}
+
+	.step3{
+		background: url(../img/step3.jpg);
+		background-size: cover;
+		background-position: center;
+		margin: 0;
+	}
+	
+}
+
+/*      4. meetPartners SECTION         */
+
+.meetPartners{
+	text-align: center;
+	.partner{
+		padding: 0 50px 27px 50px;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	.partnerPhoto{
+		width: 120px;
+		height: 120px;
+		margin: 0 auto 22px auto;
+		position: relative;
+		img{
+			width: 100%;
+		}
+	}
+
+	.partnerIcon{
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		bottom: -8px;
+		right: -2px;
+		border: 4px solid #fff;
+		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+	}
+	.partnerIcon1{
+		background-image: url(../img/parthnerIcon1.png);	
+	}
+	.partnerIcon2{
+		background-image: url(../img/parthnerIcon2.png);	
+	}
+	.partnerIcon3{
+		background-image: url(../img/parthnerIcon3.png);	
+	}
+	.partnerIcon4{
+		background-image: url(../img/parthnerIcon4.png);	
+	}
+
+	.partnerName{
+		color: $mainColor;
+		font-size: 14px;
+		text-transform: capitalize;
+		margin: 0 0 15px 0;
+	}
+
+	.aboutPartner{
+		font-size: 14px;
+		font-family: "RobotoLight", arial;
+		font-weight: lighter;
+		color: $meetPartnersColor;
+		line-height: 16px;
+	}
+
+	.buttonPartners{
+		display: inline-block;
+		color: $tomato;
+		border-radius: 30px;
+		border: 3px solid $tomato;
+		padding: 10px 70px;
+		font-size: 14px;
+
+	}
 
 }
 
 
-/*      3. howItWorks SECTION      */
-/*      4. meetPartners SECTION         */
+
+
 /*      5. discoverIdias         */
 /*      6. FOOTER         */
