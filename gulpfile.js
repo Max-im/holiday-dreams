@@ -32,7 +32,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'src/libs/jquery/dist/jquery.min.js', // Берем jQuery
-		'src/libs/jcarousel/dist/jquery.jcarousel.min.js', // Берем jCarousel
+		'src/libs/owlcarousel/owl-carousel/owl.carousel.min.js', // Берем Owlcarousel
 		'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -44,7 +44,10 @@ gulp.task('scripts', function() {
 // переделать указывать путь руками как в js!!!
 gulp.task('css-libs', function() {
 	return gulp.src([
-	'src/libs/magnific-popup/dist/magnific-popup.css' // Берем Magnific Popup
+	'src/libs/magnific-popup/dist/magnific-popup.css', // Берем Magnific Popup
+	'src/libs/owlcarousel/owl-carousel/owl.carousel.css', // Берем Owlcarousel
+	'src/libs/owlcarousel/owl-carousel/owl.transitions.css', // Берем Owlcarousel
+	'src/libs/owlcarousel/owl-carousel/owl.theme.css' // Берем Owlcarousel
 	]) // Выбираем файл для минификации
 		.pipe(concat('libs.min.css')) //Собираем их в кучу в новом файле libs.min.css
 		.pipe(cssnano()) // Сжимаем
