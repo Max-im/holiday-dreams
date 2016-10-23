@@ -234,14 +234,10 @@ body {
     footer.footer div.footBlock4 {
       width: 46%;
       text-align: right; }
+    footer.footer .footerHeader {
+      margin: 0 0 16px 3px; }
     footer.footer .linksList li {
-      display: block;
-      text-align: left;
-      margin: 5px 0 0 0px; }
-    footer.footer .designBy {
-      margin: 0px 0px 3px 55px; }
-    footer.footer .logoLink {
-      margin: 0px 0px 0px 30px; } }
+      margin: 7px 0 0 0px; } }
 
 /* Large Devices, Wide Screens */
 /*@import var and mixin*/
