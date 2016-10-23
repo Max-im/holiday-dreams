@@ -165,6 +165,92 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+	div.wrapper{
+		width: 1440px;
+	}
+
+	div .container{
+		width: 992px;
+	}
+
+	
+
+	/*header*/
+	header.header{
+		padding-top: 40px;
+		padding: 40px 0 245px 0;
+		.logInBlock{
+			float: right;
+			margin: 0 30px 140px 0;
+			.logIn{
+				margin: 0 17px 0 0;
+			}
+		}
+		.headParag{
+			margin: 10px 0 29px 55px;
+		}
+		.mainHeader{
+			width: 50%;
+		}
+	}
+
+	/*main*/
+	/*meetPartners*/
+	.meetPartners{
+		padding: 0 5%;
+		.sectionHeader{
+			margin: 95px 0 35px;
+		}
+		.partnerWrapper{
+			width: 49%;
+		}
+		.partner{
+			width: 49%;
+			vertical-align: top;
+			display: inline-block;
+			padding: 0 15px 30px
+		}
+		.buttonPartners{
+			margin: 0px auto 0 auto;
+		}
+	}
+
+
+	/*footer*/
+	footer.footer{
+		padding: 43px 0;
+		margin: 0;
+		
+		div.footBlock1{
+			width: 24%;
+			text-align: left;
+		}
+		div.footBlock2{
+			width: 14%;
+			text-align: left;
+		}
+		div.footBlock3{
+			width: 10%;
+			text-align: left;	
+		}
+		div.footBlock4{
+			width: 46%;
+			text-align: right; 
+		}
+		.linksList li{
+			display: block;
+			text-align: left;
+			margin: 5px 0 0 0px;
+		}
+		.designBy{
+			margin: 0px 0px 3px 55px;
+		}
+		.logoLink{
+			margin: 0px 0px 0px 30px;
+		}
+	}
+
+
 }
 
  /* Large Devices, Wide Screens */

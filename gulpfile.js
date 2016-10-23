@@ -59,7 +59,7 @@ gulp.task('min-css',['css-libs'], function(){
 })
 
 gulp.task('watch', ['browser-sync', 'min-css', 'sass', 'scripts' ], function() {
-	gulp.watch('src/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('src/sass/**/*.scss', ['sass', browserSync.reload]); // Наблюдение за sass файлами в папке sass
 	gulp.watch('src/css/style.css', ['min-css']); // Наблюдение за css файлами в папке css
 	gulp.watch('src/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('src/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js

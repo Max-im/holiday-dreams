@@ -185,6 +185,64 @@ body {
       margin: 0px 0px 0px 30px; } }
 
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  div.wrapper {
+    width: 1440px; }
+  div .container {
+    width: 992px; }
+  /*header*/
+  header.header {
+    padding-top: 40px;
+    padding: 40px 0 245px 0; }
+    header.header .logInBlock {
+      float: right;
+      margin: 0 30px 140px 0; }
+      header.header .logInBlock .logIn {
+        margin: 0 17px 0 0; }
+    header.header .headParag {
+      margin: 10px 0 29px 55px; }
+    header.header .mainHeader {
+      width: 50%; }
+  /*main*/
+  /*meetPartners*/
+  .meetPartners {
+    padding: 0 5%; }
+    .meetPartners .sectionHeader {
+      margin: 95px 0 35px; }
+    .meetPartners .partnerWrapper {
+      width: 49%; }
+    .meetPartners .partner {
+      width: 49%;
+      vertical-align: top;
+      display: inline-block;
+      padding: 0 15px 30px; }
+    .meetPartners .buttonPartners {
+      margin: 0px auto 0 auto; }
+  /*footer*/
+  footer.footer {
+    padding: 43px 0;
+    margin: 0; }
+    footer.footer div.footBlock1 {
+      width: 24%;
+      text-align: left; }
+    footer.footer div.footBlock2 {
+      width: 14%;
+      text-align: left; }
+    footer.footer div.footBlock3 {
+      width: 10%;
+      text-align: left; }
+    footer.footer div.footBlock4 {
+      width: 46%;
+      text-align: right; }
+    footer.footer .linksList li {
+      display: block;
+      text-align: left;
+      margin: 5px 0 0 0px; }
+    footer.footer .designBy {
+      margin: 0px 0px 3px 55px; }
+    footer.footer .logoLink {
+      margin: 0px 0px 0px 30px; } }
+
 /* Large Devices, Wide Screens */
 /*@import var and mixin*/
 /*colors*/
