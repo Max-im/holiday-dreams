@@ -42,6 +42,123 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+	div .container{
+		width: 768px;
+	}
+	h2.sectionHeader{
+		margin: 100px 0 35px;
+	}
+	
+	/*header*/
+	header.header{
+		padding-top: 40px;
+		padding: 40px 0 245px 0;
+		.logInBlock{
+			float: right;
+			margin: 0 53px 140px 0;
+			.logIn{
+				margin: 0 17px 0 0;
+			}
+		}
+		.headParag{
+			float: left;
+			margin: 10px 0 29px 45px;
+		}
+		.mainHeader{
+			font-size: 52px;
+			line-height: 62px;
+			clear: both;
+			margin: 0 auto 30px auto;
+			width: 70%;
+			letter-spacing: -1.5px;
+		}
+		.discParag{
+			font-size: 24px;
+			margin: 0 auto 48px auto;
+		}
+		.buttonFindHolliday{
+			padding: 10px 20px;
+		}
+	}
+
+	/*main*/
+	/*howItWorks*/
+	.howItWorks{
+		.steps{
+			width: 31%;
+			height: 400px;
+			margin: 0 10px 0 0;
+		}
+		.step3{
+			margin: 0;
+		}
+	}
+	/*meetPartners*/
+	.meetPartners{
+		padding: 0 5%;
+		.sectionHeader{
+			margin: 95px 0 35px;
+		}
+		.partnerWrapper{
+			width: 33%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.partner{
+			text-align: center;
+			padding: 0 15px 50px;
+		}
+		.buttonPartners{
+			display: block;
+			width: 190px;
+			padding: 10px 0;
+			margin: -8px auto 0 auto;
+		}
+	}
+
+	/*discoverIdias*/
+	section.discoverIdias{
+		margin: 0 0 90px 0;
+		.idia{
+			height: 310px;
+			width: 30%;
+			margin: 5px;
+		}
+		.idia-5, .idia-6{
+			width: 60%;
+		}
+		.idiasParag{
+			margin: 0 0 40px 0;
+		}
+		#input{
+			width: 240px;
+		}
+		.searchButton{
+			padding:10px 25px;
+		}
+	}
+
+	/*footer*/
+	footer.footer{
+		padding: 35px 0;
+		div.footBlock{
+			display: inline-block;
+			vertical-align: top;
+			width: 23%;
+		}
+		.linksList li{
+			display: block;
+			text-align: left;
+			margin: 5px 0 0 60px;
+		}
+		.designBy{
+			margin: 0px 0px 3px 55px;
+		}
+		.logoLink{
+			margin: 0px 0px 0px 30px;
+		}
+	}
+
 
 }
 

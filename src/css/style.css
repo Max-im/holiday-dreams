@@ -99,6 +99,91 @@ body {
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  div .container {
+    width: 768px; }
+  h2.sectionHeader {
+    margin: 100px 0 35px; }
+  /*header*/
+  header.header {
+    padding-top: 40px;
+    padding: 40px 0 245px 0; }
+    header.header .logInBlock {
+      float: right;
+      margin: 0 53px 140px 0; }
+      header.header .logInBlock .logIn {
+        margin: 0 17px 0 0; }
+    header.header .headParag {
+      float: left;
+      margin: 10px 0 29px 45px; }
+    header.header .mainHeader {
+      font-size: 52px;
+      line-height: 62px;
+      clear: both;
+      margin: 0 auto 30px auto;
+      width: 70%;
+      letter-spacing: -1.5px; }
+    header.header .discParag {
+      font-size: 24px;
+      margin: 0 auto 48px auto; }
+    header.header .buttonFindHolliday {
+      padding: 10px 20px; }
+  /*main*/
+  /*howItWorks*/
+  .howItWorks .steps {
+    width: 31%;
+    height: 400px;
+    margin: 0 10px 0 0; }
+  .howItWorks .step3 {
+    margin: 0; }
+  /*meetPartners*/
+  .meetPartners {
+    padding: 0 5%; }
+    .meetPartners .sectionHeader {
+      margin: 95px 0 35px; }
+    .meetPartners .partnerWrapper {
+      width: 33%;
+      display: inline-block;
+      vertical-align: top; }
+    .meetPartners .partner {
+      text-align: center;
+      padding: 0 15px 50px; }
+    .meetPartners .buttonPartners {
+      display: block;
+      width: 190px;
+      padding: 10px 0;
+      margin: -8px auto 0 auto; }
+  /*discoverIdias*/
+  section.discoverIdias {
+    margin: 0 0 90px 0; }
+    section.discoverIdias .idia {
+      height: 310px;
+      width: 30%;
+      margin: 5px; }
+    section.discoverIdias .idia-5, section.discoverIdias .idia-6 {
+      width: 60%; }
+    section.discoverIdias .idiasParag {
+      margin: 0 0 40px 0; }
+    section.discoverIdias #input {
+      width: 240px; }
+    section.discoverIdias .searchButton {
+      padding: 10px 25px; }
+  /*footer*/
+  footer.footer {
+    padding: 35px 0; }
+    footer.footer div.footBlock {
+      display: inline-block;
+      vertical-align: top;
+      width: 23%; }
+    footer.footer .linksList li {
+      display: block;
+      text-align: left;
+      margin: 5px 0 0 60px; }
+    footer.footer .designBy {
+      margin: 0px 0px 3px 55px; }
+    footer.footer .logoLink {
+      margin: 0px 0px 0px 30px; } }
+
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
 /*@import var and mixin*/
@@ -115,6 +200,10 @@ body {
 
 ======================*/
 /*      1. common part       */
+.wrapper {
+  width: 940px;
+  margin: 0 auto; }
+
 .container {
   width: 320px;
   margin: 0 auto; }
@@ -133,231 +222,297 @@ body {
 .header {
   width: 100%;
   background: url(../img/head..jpg);
-  /*background-position: top;*/
+  background-position: top;
   padding: 20px 0px 152px 0px;
   background-size: cover;
   color: #fff;
   text-align: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /*top links start*/
-  /*top links end*/
-  /*main text start*/
-  /*main text end*/
-  /*button start*/
-  /*button end*/ }
-  .header .logInBlock {
-    margin: 0 0 117px 17px;
-    text-align: left; }
-    .header .logInBlock a {
-      color: #fff;
-      font-size: 14px;
-      display: inline-block; }
-  .header .logIn {
-    margin: 0 17px 0 21%; }
-  .header .signUp {
-    border: 1px solid #fff;
-    border-top: 2px solid #fff;
-    -webkit-border-radius: 40px;
-            border-radius: 40px;
-    padding: 10px 15px; }
-  .header .headParag {
-    margin: 0 0 29px 0px;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px; }
-  .header .mainHeader {
-    margin: 0 0 10px 0;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    line-height: 36px; }
-  .header .discParag {
-    width: 70%;
-    margin: 0 auto 27px auto;
-    font-family: "RobotoLight", arial;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px; }
-  .header .buttonFindHolliday {
-    /*display: block;*/
-    background: #ff4e50;
-    padding: 10px 50px;
-    -webkit-border-radius: 30px;
-            border-radius: 30px;
-    color: #fff;
-    font-size: 14px; }
+          box-sizing: border-box; }
 
+/*top links start*/
+.logInBlock {
+  margin: 0 0 117px 17px;
+  text-align: left; }
+  .logInBlock a {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block; }
+
+.logIn {
+  margin: 0 17px 0 21%; }
+
+.signUp {
+  border: 1px solid #fff;
+  border-top: 2px solid #fff;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  padding: 10px 15px; }
+
+/*top links end*/
+/*main text start*/
+.headParag {
+  margin: 0 0 29px 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
+
+.mainHeader {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 36px; }
+
+.discParag {
+  width: 70%;
+  margin: 0 auto 27px auto;
+  font-family: "RobotoLight", arial;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px; }
+
+/*main text end*/
+/*button start*/
+.buttonFindHolliday {
+  background: #ff4e50;
+  padding: 10px 50px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #fff;
+  font-size: 14px; }
+
+/*button end*/
 /*      3. howItWorks SECTION      */
 .howItWorks {
   text-align: center; }
-  .howItWorks .steps {
-    display: inline-block;
-    width: 94%;
-    height: 240px;
-    position: relative;
-    text-align: left;
-    margin: 0 0 5px 0;
-    -webkit-border-radius: 7px;
-            border-radius: 7px;
-    border: 1px solid #dadada; }
-  .howItWorks .stepsWrapper {
-    padding: 0 23px 20px 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    position: absolute;
-    bottom: 0; }
-  .howItWorks .stepButton {
-    display: inline-block;
-    -webkit-border-radius: 30px;
-            border-radius: 30px;
-    background: #ff4e50;
-    margin: 0 0 15px 2px;
-    padding: 5px 11px;
-    color: #fff;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: normal; }
-  .howItWorks .stepsHeader {
-    color: #fff;
-    font-size: 24px;
-    margin: 0 0 10px 0;
-    line-height: 29px;
-    letter-spacing: -.5px; }
-  .howItWorks .stepsParag {
-    display: block;
-    color: #ccc;
-    font-family: "RobotoLight", arial;
-    font-weight: lighter;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: -.5px;
-    text-align: justify; }
-  .howItWorks .step1 {
-    background: url(../img/step1.jpg);
-    background-size: cover;
-    background-position: center; }
-  .howItWorks .step2 {
-    background: url(../img/step2.jpg);
-    background-size: cover;
-    background-position: center; }
-  .howItWorks .step3 {
-    background: url(../img/step3.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 0; }
+
+.steps {
+  display: inline-block;
+  width: 94%;
+  height: 240px;
+  position: relative;
+  text-align: left;
+  margin: 0 0 5px 0;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  border: 1px solid #dadada; }
+
+.stepsWrapper {
+  padding: 0 23px 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 0; }
+
+.stepButton {
+  display: inline-block;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  background: #ff4e50;
+  margin: 0 0 15px 2px;
+  padding: 5px 11px;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal; }
+
+.stepsHeader {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  line-height: 29px;
+  letter-spacing: -.5px; }
+
+.stepsParag {
+  display: block;
+  color: #ccc;
+  font-family: "RobotoLight", arial;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -.5px;
+  text-align: justify; }
+
+.step1 {
+  background: url(../img/step1.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.step2 {
+  background: url(../img/step2.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.step3 {
+  background: url(../img/step3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0; }
 
 /*      4. meetPartners SECTION         */
 .meetPartners {
   text-align: center; }
-  .meetPartners .partner {
-    padding: 0 50px 27px 50px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+
+.partner {
+  padding: 0 50px 27px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top; }
+
+.partnerPhoto {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 22px auto;
+  position: relative; }
+  .partnerPhoto img {
     width: 100%; }
-  .meetPartners .partnerPhoto {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 22px auto;
-    position: relative; }
-    .meetPartners .partnerPhoto img {
-      width: 100%; }
-  .meetPartners .partnerIcon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: -8px;
-    right: -2px;
-    border: 4px solid #fff;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    background-size: cover;
-    background-position: center; }
-  .meetPartners .partnerIcon1 {
-    background-image: url(../img/parthnerIcon1.png); }
-  .meetPartners .partnerIcon2 {
-    background-image: url(../img/parthnerIcon2.png); }
-  .meetPartners .partnerIcon3 {
-    background-image: url(../img/parthnerIcon3.png); }
-  .meetPartners .partnerIcon4 {
-    background-image: url(../img/parthnerIcon4.png); }
-  .meetPartners .partnerName {
-    color: #333;
-    font-size: 14px;
-    text-transform: capitalize;
-    margin: 0 0 15px 0; }
-  .meetPartners .aboutPartner {
-    font-size: 14px;
-    font-family: "RobotoLight", arial;
-    font-weight: lighter;
-    color: #666;
-    line-height: 16px; }
-  .meetPartners .buttonPartners {
-    display: inline-block;
-    color: #ff4e50;
-    -webkit-border-radius: 30px;
-            border-radius: 30px;
-    border: 3px solid #ff4e50;
-    padding: 10px 70px;
-    font-size: 14px;
-    margin: 0 0 5px 0; }
+
+.partnerIcon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -8px;
+  right: -2px;
+  border: 4px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-size: cover;
+  background-position: center; }
+
+.partnerIcon1 {
+  background-image: url(../img/parthnerIcon1.png); }
+
+.partnerIcon2 {
+  background-image: url(../img/parthnerIcon2.png); }
+
+.partnerIcon3 {
+  background-image: url(../img/parthnerIcon3.png); }
+
+.partnerIcon4 {
+  background-image: url(../img/parthnerIcon4.png); }
+
+.partnerName {
+  color: #333;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin: 0 0 15px 0; }
+
+.aboutPartner {
+  font-size: 14px;
+  font-family: "RobotoLight", arial;
+  font-weight: lighter;
+  color: #666;
+  line-height: 16px; }
+
+.buttonPartners {
+  display: inline-block;
+  color: #ff4e50;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 3px solid #ff4e50;
+  padding: 10px 70px;
+  font-size: 14px;
+  margin: 0 0 5px 0; }
 
 /*      5. discoverIdias         */
 .discoverIdias {
   text-align: center;
-  /*form start*/ }
-  .discoverIdias .idia {
-    width: 94%;
-    height: 120px;
-    position: relative;
+  margin: 0 0 40px 0; }
+
+.idia {
+  width: 94%;
+  height: 120px;
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  border: 1px solid #c1e3d7;
+  margin: 0 auto 7px auto; }
+  .idia figure {
+    height: 100%; }
+  .idia img {
     -webkit-border-radius: 10px;
             border-radius: 10px;
-    border: 1px solid #c1e3d7;
-    margin: 0 auto 7px auto; }
-    .discoverIdias .idia img {
-      -webkit-border-radius: 10px;
-              border-radius: 10px;
-      width: 100%;
-      height: 100%; }
-    .discoverIdias .idia .idiaText {
-      text-align: center;
-      z-index: 2;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      margin: auto;
-      height: 25px; }
-      .discoverIdias .idia .idiaText a {
-        color: #fff;
-        font-size: 21px;
-        letter-spacing: -.5px;
-        line-height: 27px; }
-  .discoverIdias .idiasParag {
-    font-family: "RobotoLight", arial;
-    font-weight: normal;
-    font-size: 18px;
-    margin: 0 0 20px 0; }
-  .discoverIdias #input {
-    width: 280px;
-    padding: 10px 15px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border: 1px solid #ccc;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    margin: 0 0 10px 0; }
-  .discoverIdias .searchButton {
-    color: #fff;
-    background: #ff4e50;
-    border: none;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 80px;
-    -webkit-border-radius: 30px;
-            border-radius: 30px; }
+    width: 100%;
+    height: 100%; }
+  .idia .idiaText {
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 25px; }
+    .idia .idiaText a {
+      color: #fff;
+      font-size: 21px;
+      letter-spacing: -.5px;
+      line-height: 27px; }
 
+/*form start*/
+.idiasParag {
+  font-family: "RobotoLight", arial;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0 0 20px 0; }
+
+#input {
+  width: 280px;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin: 0 0 10px 0; }
+
+.searchButton {
+  color: #fff;
+  background: #ff4e50;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 80px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px; }
+
+/*form end*/
 /*      6. FOOTER         */
+.footer {
+  padding: 20px 0;
+  border-top: 4px solid #ff4e50;
+  text-align: center; }
+
+.footerMainHeader {
+  margin: 0 0 13px 0;
+  color: #ff4e50;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.footerHeader {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 5px 0; }
+
+.linksList li {
+  display: inline-block;
+  margin: 0 0 15px 0; }
+  .linksList li a {
+    color: #666;
+    font-family: "RobotoLight", arial;
+    font-weight: 300; }
+
+.designBy {
+  margin: 12px 0 10px 0; }
+  .designBy a {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #ccc;
+    letter-spacing: 1px; }

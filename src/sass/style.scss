@@ -18,10 +18,16 @@
 
 
 /*      1. common part       */
+.wrapper{
+	width: 940px;
+	margin: 0 auto;
+}
+
 .container{
 	width: 320px;
 	margin: 0 auto;
 }
+
 .sectionHeader{
 	font-size: 22px;
 	color: $mainColor;
@@ -41,278 +47,320 @@
  .header{
 	width: 100%;
 	background: url(../img/head..jpg);
-	/*background-position: top;*/
+	background-position: top;
 	padding: 20px 0px 152px 0px;
 	background-size: cover;
 	color: #fff;
 	text-align: center;
 	box-sizing:border-box;
+}
 
-	/*top links start*/
-	.logInBlock{
-		margin: 0 0 117px 17px;
-		text-align: left;
-		a{
-			color: #fff;
-			font-size: 14px;
-			display: inline-block;
-		}
-	
-	}
-	.logIn{
-		margin: 0 17px 0 21%;
-	}
-
-	.signUp{
-		border: 1px solid #fff;
-		border-top: 2px solid #fff;
-		border-radius: 40px;
-		padding: 10px 15px;
-	}
-	/*top links end*/
-
-
-	/*main text start*/
-	.headParag{
-		margin: 0 0 29px 0px;
-		font-size: 20px;
-		text-transform: uppercase;
-		letter-spacing: 0.5px;
-	}
-	.mainHeader{
-		margin: 0 0 10px 0;
-		font-size: 30px;
-		text-transform: uppercase;
-		letter-spacing: -1px;
-		line-height: 36px;
-	}
-
-	.discParag{
-		width: 70%;
-		margin: 0 auto 27px auto;
-		font-family: "RobotoLight", arial;
-		font-weight: normal;
-		font-size: 18px;
-		line-height: 20px;
-	}
-	/*main text end*/
-
-
-	/*button start*/
-	.buttonFindHolliday{
-		/*display: block;*/
-		background: $tomato;
-		padding: 10px 50px;
-		border-radius: 30px;
+/*top links start*/
+.logInBlock{
+	margin: 0 0 117px 17px;
+	text-align: left;
+	a{
 		color: #fff;
 		font-size: 14px;
+		display: inline-block;
 	}
-	/*button end*/
+
 }
+.logIn{
+	margin: 0 17px 0 21%;
+}
+
+.signUp{
+	border: 1px solid #fff;
+	border-top: 2px solid #fff;
+	border-radius: 40px;
+	padding: 10px 15px;
+}
+/*top links end*/
+
+
+/*main text start*/
+.headParag{
+	margin: 0 0 29px 0px;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.mainHeader{
+	margin: 0 0 10px 0;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	line-height: 36px;
+}
+
+.discParag{
+	width: 70%;
+	margin: 0 auto 27px auto;
+	font-family: "RobotoLight", arial;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+}
+/*main text end*/
+
+
+/*button start*/
+.buttonFindHolliday{
+	background: $tomato;
+	padding: 10px 50px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 14px;
+}
+/*button end*/
 
 /*      3. howItWorks SECTION      */
 
 .howItWorks{
-		text-align: center;
-	.steps{
-		display: inline-block;
-		width: 94%;
-		height: 240px;
-		position: relative;
-		text-align: left;
-		margin: 0 0 5px 0;
-		border-radius: 7px;
-		border: 1px solid #dadada;
-	}
-	.stepsWrapper{
-		padding: 0 23px 20px 20px;
-		box-sizing: border-box;
-		position: absolute;
-		bottom: 0;
-	}
-	.stepButton{
-		display: inline-block;
-		border-radius: 30px;
-		background: $tomato;
-		margin: 0 0 15px 2px;
-		padding: 5px 11px;
-		color: #fff;
-		font-size: 10px;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		font-weight: normal;
-	}
-	.stepsHeader{
-		color: #fff;
-		font-size: 24px;
-		margin: 0 0 10px 0;
-		line-height: 29px;
-		letter-spacing: -.5px;
-	}
-	.stepsParag{
-		display: block;
-		color: $howItWorksColor;
-		font-family: "RobotoLight", arial;
-		font-weight: lighter;
-		font-size: 14px;
-		line-height: 16px;
-		letter-spacing: -.5px;
-		text-align: justify;
-	}
-
-	.step1{
-		background: url(../img/step1.jpg);
-		background-size: cover;
-		background-position: center;
-	}
-
-	.step2{
-		background: url(../img/step2.jpg);
-		background-size: cover;	
-		background-position: center;
-	}
-
-	.step3{
-		background: url(../img/step3.jpg);
-		background-size: cover;
-		background-position: center;
-		margin: 0;
-	}
-	
+	text-align: center;
 }
+.steps{
+	display: inline-block;
+	width: 94%;
+	height: 240px;
+	position: relative;
+	text-align: left;
+	margin: 0 0 5px 0;
+	border-radius: 7px;
+	border: 1px solid #dadada;
+}
+.stepsWrapper{
+	padding: 0 23px 20px 20px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+}
+.stepButton{
+	display: inline-block;
+	border-radius: 30px;
+	background: $tomato;
+	margin: 0 0 15px 2px;
+	padding: 5px 11px;
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+.stepsHeader{
+	color: #fff;
+	font-size: 24px;
+	margin: 0 0 10px 0;
+	line-height: 29px;
+	letter-spacing: -.5px;
+}
+.stepsParag{
+	display: block;
+	color: $howItWorksColor;
+	font-family: "RobotoLight", arial;
+	font-weight: lighter;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: -.5px;
+	text-align: justify;
+}
+
+.step1{
+	background: url(../img/step1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.step2{
+	background: url(../img/step2.jpg);
+	background-size: cover;	
+	background-position: center;
+}
+
+.step3{
+	background: url(../img/step3.jpg);
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+}
+	
 
 /*      4. meetPartners SECTION         */
 
 .meetPartners{
 	text-align: center;
-	.partner{
-		padding: 0 50px 27px 50px;
-		box-sizing: border-box;
+}
+.partner{
+	padding: 0 50px 27px 50px;
+	box-sizing: border-box;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+.partnerPhoto{
+	width: 120px;
+	height: 120px;
+	margin: 0 auto 22px auto;
+	position: relative;
+	img{
 		width: 100%;
 	}
-	.partnerPhoto{
-		width: 120px;
-		height: 120px;
-		margin: 0 auto 22px auto;
-		position: relative;
-		img{
-			width: 100%;
-		}
-	}
-
-	.partnerIcon{
-		width: 30px;
-		height: 30px;
-		position: absolute;
-		bottom: -8px;
-		right: -2px;
-		border: 4px solid #fff;
-		border-radius: 50%;
-		background-size: cover;
-		background-position: center;
-	}
-	.partnerIcon1{
-		background-image: url(../img/parthnerIcon1.png);	
-	}
-	.partnerIcon2{
-		background-image: url(../img/parthnerIcon2.png);	
-	}
-	.partnerIcon3{
-		background-image: url(../img/parthnerIcon3.png);	
-	}
-	.partnerIcon4{
-		background-image: url(../img/parthnerIcon4.png);	
-	}
-
-	.partnerName{
-		color: $mainColor;
-		font-size: 14px;
-		text-transform: capitalize;
-		margin: 0 0 15px 0;
-	}
-
-	.aboutPartner{
-		font-size: 14px;
-		font-family: "RobotoLight", arial;
-		font-weight: lighter;
-		color: $meetPartnersColor;
-		line-height: 16px;
-	}
-
-	.buttonPartners{
-		display: inline-block;
-		color: $tomato;
-		border-radius: 30px;
-		border: 3px solid $tomato;
-		padding: 10px 70px;
-		font-size: 14px;
-		margin: 0 0 5px 0;
-	}
-
 }
+
+.partnerIcon{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: -8px;
+	right: -2px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+}
+.partnerIcon1{
+	background-image: url(../img/parthnerIcon1.png);	
+}
+.partnerIcon2{
+	background-image: url(../img/parthnerIcon2.png);	
+}
+.partnerIcon3{
+	background-image: url(../img/parthnerIcon3.png);	
+}
+.partnerIcon4{
+	background-image: url(../img/parthnerIcon4.png);	
+}
+
+.partnerName{
+	color: $mainColor;
+	font-size: 14px;
+	text-transform: capitalize;
+	margin: 0 0 15px 0;
+}
+
+.aboutPartner{
+	font-size: 14px;
+	font-family: "RobotoLight", arial;
+	font-weight: lighter;
+	color: $meetPartnersColor;
+	line-height: 16px;
+}
+
+.buttonPartners{
+	display: inline-block;
+	color: $tomato;
+	border-radius: 30px;
+	border: 3px solid $tomato;
+	padding: 10px 70px;
+	font-size: 14px;
+	margin: 0 0 5px 0;
+}
+
+
 
 /*      5. discoverIdias         */
 
 .discoverIdias{
 	text-align: center;
-	.idia{
-		width: 94%;
-		height: 120px;
-		position: relative;
-		border-radius: 10px;
-		border: 1px solid #c1e3d7;
-		margin: 0 auto 7px auto;
-		img{
-			border-radius: 10px;
-			width: 100%;
-			height: 100%;
-		}
-		.idiaText{
-			text-align: center; 
-			z-index: 2;
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			margin: auto;
-			height: 25px;
-			a{
-				color: #fff;
-				font-size: 21px;
-				letter-spacing: -.5px;
-				line-height: 27px;
-			}
-		}
-	
-	}
-	/*form start*/
-	.idiasParag{
-		font-family: "RobotoLight", arial;
-		font-weight: normal;
-		font-size: 18px;
-		margin: 0 0 20px 0;
-	}
-	#input{
-		width: 280px;
-		padding: 10px 15px;
-		box-sizing: border-box;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-		margin: 0 0 10px 0;
-	}
-	.searchButton{
-		color: #fff;
-		background: $tomato;
-		border: none;
-		font-family: Montserrat;
-		font-weight:600;
-		font-size: 14px;
-		padding: 10px 80px;
-		border-radius: 30px;
-	}
-
+	margin: 0 0 40px 0;
 }
+.idia{
+	width: 94%;
+	height: 120px;
+	position: relative;
+	display: inline-block;
+	border-radius: 10px;
+	border: 1px solid #c1e3d7;
+	margin: 0 auto 7px auto;
+	figure{
+		height: 100%;
+	}
+	img{
+		border-radius: 10px;
+		width: 100%;
+		height: 100%;
+	}
+	.idiaText{
+		text-align: center; 
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		height: 25px;
+		a{
+			color: #fff;
+			font-size: 21px;
+			letter-spacing: -.5px;
+			line-height: 27px;
+		}
+	}
+	
+}
+/*form start*/
+.idiasParag{
+	font-family: "RobotoLight", arial;
+	font-weight: normal;
+	font-size: 18px;
+	margin: 0 0 20px 0;
+}
+#input{
+	width: 280px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 0 0 10px 0;
+}
+.searchButton{
+	color: #fff;
+	background: $tomato;
+	border: none;
+	font-family: Montserrat;
+	font-weight:600;
+	font-size: 14px;
+	padding: 10px 80px;
+	border-radius: 30px;
+}
+/*form end*/
 
 
 /*      6. FOOTER         */
+
+.footer{
+	padding: 20px 0;
+	border-top: 4px solid $tomato;
+	text-align: center;
+}
+.footerMainHeader{
+	margin: 0 0 13px 0;
+	color: $tomato;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.footerHeader{
+	font-size: 14px;
+	color: $mainColor;
+	margin: 0 0 5px 0;
+}
+.linksList li{
+	display: inline-block;
+	margin: 0 0 15px 0;
+	a{
+		color: $meetPartnersColor;
+		font-family: "RobotoLight", arial;
+		font-weight: 300;
+	}
+}
+.designBy{
+	margin: 12px 0 10px 0;
+	a{
+		text-transform: uppercase;
+		font-size: 10px;
+		color: $howItWorksColor;
+		letter-spacing: 1px;
+	}
+}
