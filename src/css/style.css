@@ -167,15 +167,18 @@ body {
       margin: -8px auto 0 auto; }
   /*discoverIdias*/
   section.discoverIdias {
-    margin: 0 0 90px 0; }
+    margin: 0 0 90px 0;
+    /*.grid-item { width: 235px; }*/ }
     section.discoverIdias .sectionHeader {
       margin: 93px 0 35px; }
     section.discoverIdias .idia {
       height: 310px;
-      width: 30%;
-      margin: 6px; }
+      /*width: 235px;*/
+      width: 30%; }
     section.discoverIdias .idia-5, section.discoverIdias .idia-6 {
-      width: 60%; }
+      width: 490px; }
+    section.discoverIdias .idia-6, section.discoverIdias .idia-7 {
+      margin: 0; }
     section.discoverIdias .idiasParag {
       margin: 0 0 40px 0; }
     section.discoverIdias #input {
@@ -244,10 +247,16 @@ body {
       padding: 0 15px 35px; }
     .meetPartners .buttonPartners {
       margin: 0px auto 0 auto; }
-  .discoverIdias .sectionHeader {
+  /*discoverIdias*/
+  section.discoverIdias .sectionHeader {
     margin: 97px 0 37px; }
-  .discoverIdias p.idiasParag {
-    margin: 0 0 44px 0; }
+  section.discoverIdias .idia {
+    /*width: 235px; */ }
+  section.discoverIdias .idia-5,
+  section.discoverIdias .idia-6 {
+    width: 620px; }
+  section.discoverIdias .idiasParag {
+    margin: 0 0 36px 0; }
   /*footer*/
   footer.footer {
     padding: 40px 0;
@@ -285,7 +294,7 @@ body {
 ======================*/
 /*      1. common part       */
 .wrapper {
-  width: 940px;
+  width: 100%;
   margin: 0 auto; }
 
 .container {
@@ -535,14 +544,13 @@ body {
   margin: 0 0 44px 0; }
 
 .idia {
-  width: 94%;
   height: 120px;
+  width: 300px;
+  margin: 0 0 20px 0;
   position: relative;
-  display: inline-block;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   border: 1px solid #c1e3d7;
-  margin: 0 auto 7px auto;
   overflow: hidden; }
   .idia figure {
     height: 100%; }

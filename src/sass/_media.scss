@@ -134,17 +134,22 @@
 	/*discoverIdias*/
 	section.discoverIdias{
 		margin: 0 0 90px 0;
+		/*.grid-item { width: 235px; }*/
 		.sectionHeader{
 			margin: 93px 0 35px;
 		}
 		.idia{
 			height: 310px;
+			/*width: 235px;*/
 			width: 30%;
-			margin: 6px;
 		}
 		.idia-5, .idia-6{
-			width: 60%;
+			width: 490px;
 		}
+		.idia-6, .idia-7{
+			margin: 0;
+		}
+
 		.idiasParag{
 			margin: 0 0 40px 0;
 		}
@@ -250,12 +255,24 @@
 			margin: 0px auto 0 auto;
 		}
 	}
-	.discoverIdias{
+
+
+	/*discoverIdias*/
+	section.discoverIdias{
 		.sectionHeader{
 			margin: 97px 0 37px;
 		}
-		p.idiasParag{
-			margin: 0 0 44px 0;
+		
+		.idia{ 
+			/*width: 235px; */
+		}
+
+		.idia-5,
+		.idia-6{
+			width: 620px;
+		}
+		.idiasParag{
+			margin: 0 0 36px 0;
 		}
 
 	}

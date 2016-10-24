@@ -33,6 +33,7 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'src/libs/jquery/dist/jquery.min.js', // Берем jQuery
 		'src/libs/owlcarousel/owl-carousel/owl.carousel.min.js', // Берем Owlcarousel
+		'src/libs/masonry/dist/masonry.pkgd.min.js', // Берем Masonry
 		'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
