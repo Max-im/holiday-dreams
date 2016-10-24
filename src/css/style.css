@@ -573,7 +573,8 @@ body {
       color: #fff;
       font-size: 21px;
       letter-spacing: -.5px;
-      line-height: 27px; }
+      line-height: 27px;
+      text-transform: capitalize; }
 
 .idia-7 {
   margin: 0; }
