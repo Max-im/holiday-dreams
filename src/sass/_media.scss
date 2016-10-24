@@ -92,12 +92,27 @@
 		.step3{
 			margin: 0;
 		}
+		.carouselWrapper{
+			width: 31%;
+			display: inline-block;
+			height: 240px;
+			margin: 0 7px 10px 5px;
+			.owl-theme .owl-controls .owl-buttons .owl-prev{
+				top: 8%;
+				display: inline-block;
+			}
+			.owl-theme .owl-controls .owl-buttons .owl-next{
+				top: 8%;
+				right: 0;
+				display: inline-block;
+			}
+		}
 	}
 	/*meetPartners*/
 	.meetPartners{
 		padding: 0 5%;
 		.sectionHeader{
-			margin: 95px 0 35px;
+			margin: 93px 0 35px;
 		}
 		.partnerWrapper{
 			width: 33%;
@@ -119,10 +134,13 @@
 	/*discoverIdias*/
 	section.discoverIdias{
 		margin: 0 0 90px 0;
+		.sectionHeader{
+			margin: 93px 0 35px;
+		}
 		.idia{
 			height: 310px;
 			width: 30%;
-			margin: 5px;
+			margin: 6px;
 		}
 		.idia-5, .idia-6{
 			width: 60%;
@@ -140,7 +158,7 @@
 
 	/*footer*/
 	footer.footer{
-		padding: 35px 0;
+		padding: 40px 0;
 		div.footBlock{
 			display: inline-block;
 			vertical-align: top;
@@ -149,7 +167,7 @@
 		.linksList li{
 			display: block;
 			text-align: left;
-			margin: 5px 0 0 60px;
+			margin: 10px 0 0 60px;
 		}
 		.designBy{
 			margin: 0px 0px 3px 55px;
@@ -168,13 +186,13 @@
 	div.wrapper{
 		width: 1440px;
 	}
-
+	
 	div .container{
 		width: 992px;
 	}
-
 	
-
+	
+	
 	/*header*/
 	header.header{
 		padding-top: 40px;
@@ -187,25 +205,37 @@
 			}
 		}
 		.headParag{
-			margin: 10px 0 29px 55px;
+			margin: 10px 0 29px 25px;
 		}
 		.mainHeader{
 			width: 50%;
 		}
 	}
-
+	
 	/*main*/
 	/*howItWorks*/
 	.howItWorks{
 		.stepsWrapper {
 		    padding: 0 30px 20px 20px;
 		}
+		.carouselWrapper{
+			width: 30%;
+			margin: 0 9px 10px 9px;
+			.owl-theme .owl-controls .owl-buttons .owl-prev{
+				top: 36%;
+				left: 5px;
+			}
+			.owl-theme .owl-controls .owl-buttons .owl-next{
+				top: 36%;
+				right: 5px;
+			}
+		}
 	}
 	/*meetPartners*/
 	.meetPartners{
 		padding: 0 5%;
 		.sectionHeader{
-			margin: 95px 0 35px;
+			margin: 93px 0 35px;
 		}
 		.partnerWrapper{
 			width: 49%;
@@ -214,17 +244,26 @@
 			width: 49%;
 			vertical-align: top;
 			display: inline-block;
-			padding: 0 15px 30px
+			padding: 0 15px 35px
 		}
 		.buttonPartners{
 			margin: 0px auto 0 auto;
 		}
 	}
+	.discoverIdias{
+		.sectionHeader{
+			margin: 97px 0 37px;
+		}
+		p.idiasParag{
+			margin: 0 0 44px 0;
+		}
 
-
+	}
+	
+	
 	/*footer*/
 	footer.footer{
-		padding: 43px 0;
+		padding: 40px 0;
 		margin: 0;
 		
 		div.footBlock1{
@@ -250,8 +289,8 @@
 			margin: 7px 0 0 0px;
 		}
 	}
-
-
+	
+	 
 }
 
  /* Large Devices, Wide Screens */

@@ -136,11 +136,23 @@ body {
     margin: 0 10px 0 0; }
   .howItWorks .step3 {
     margin: 0; }
+  .howItWorks .carouselWrapper {
+    width: 31%;
+    display: inline-block;
+    height: 240px;
+    margin: 0 7px 10px 5px; }
+    .howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-prev {
+      top: 8%;
+      display: inline-block; }
+    .howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-next {
+      top: 8%;
+      right: 0;
+      display: inline-block; }
   /*meetPartners*/
   .meetPartners {
     padding: 0 5%; }
     .meetPartners .sectionHeader {
-      margin: 95px 0 35px; }
+      margin: 93px 0 35px; }
     .meetPartners .partnerWrapper {
       width: 33%;
       display: inline-block;
@@ -156,10 +168,12 @@ body {
   /*discoverIdias*/
   section.discoverIdias {
     margin: 0 0 90px 0; }
+    section.discoverIdias .sectionHeader {
+      margin: 93px 0 35px; }
     section.discoverIdias .idia {
       height: 310px;
       width: 30%;
-      margin: 5px; }
+      margin: 6px; }
     section.discoverIdias .idia-5, section.discoverIdias .idia-6 {
       width: 60%; }
     section.discoverIdias .idiasParag {
@@ -170,7 +184,7 @@ body {
       padding: 10px 25px; }
   /*footer*/
   footer.footer {
-    padding: 35px 0; }
+    padding: 40px 0; }
     footer.footer div.footBlock {
       display: inline-block;
       vertical-align: top;
@@ -178,7 +192,7 @@ body {
     footer.footer .linksList li {
       display: block;
       text-align: left;
-      margin: 5px 0 0 60px; }
+      margin: 10px 0 0 60px; }
     footer.footer .designBy {
       margin: 0px 0px 3px 55px; }
     footer.footer .logoLink {
@@ -200,30 +214,43 @@ body {
       header.header .logInBlock .logIn {
         margin: 0 17px 0 0; }
     header.header .headParag {
-      margin: 10px 0 29px 55px; }
+      margin: 10px 0 29px 25px; }
     header.header .mainHeader {
       width: 50%; }
   /*main*/
   /*howItWorks*/
   .howItWorks .stepsWrapper {
     padding: 0 30px 20px 20px; }
+  .howItWorks .carouselWrapper {
+    width: 30%;
+    margin: 0 9px 10px 9px; }
+    .howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-prev {
+      top: 36%;
+      left: 5px; }
+    .howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-next {
+      top: 36%;
+      right: 5px; }
   /*meetPartners*/
   .meetPartners {
     padding: 0 5%; }
     .meetPartners .sectionHeader {
-      margin: 95px 0 35px; }
+      margin: 93px 0 35px; }
     .meetPartners .partnerWrapper {
       width: 49%; }
     .meetPartners .partner {
       width: 49%;
       vertical-align: top;
       display: inline-block;
-      padding: 0 15px 30px; }
+      padding: 0 15px 35px; }
     .meetPartners .buttonPartners {
       margin: 0px auto 0 auto; }
+  .discoverIdias .sectionHeader {
+    margin: 97px 0 37px; }
+  .discoverIdias p.idiasParag {
+    margin: 0 0 44px 0; }
   /*footer*/
   footer.footer {
-    padding: 43px 0;
+    padding: 40px 0;
     margin: 0; }
     footer.footer div.footBlock1 {
       width: 24%;
@@ -345,25 +372,32 @@ body {
   text-align: center; }
 
 .carouselWrapper {
-  width: 31%;
-  display: inline-block; }
-  .carouselWrapper .owl-prev {
-    background: none center !important;
-    background-repeat: no-repeat !important;
-    position: absolute !important;
+  width: 94%;
+  display: inline-block;
+  height: 240px;
+  margin: 0 0 10px 0; }
+  .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-prev {
+    background: none center;
+    background-repeat: no-repeat;
+    position: absolute;
     top: 40%;
     left: 0;
-    background-image: url(../img/pointerLeft.png) !important;
+    background-image: url(../img/pointerLeft.png);
     width: 30px;
-    height: 55px; }
-  .carouselWrapper .owl-next {
-    background: none no-repeat center !important;
-    position: absolute !important;
+    height: 55px;
+    display: none; }
+  .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-next {
+    background: none no-repeat center;
+    position: absolute;
     top: 40%;
     right: 0;
-    background-image: url(../img/pointerRight.png) !important;
+    background-image: url(../img/pointerRight.png);
     width: 30px;
-    height: 55px; }
+    height: 55px;
+    display: none; }
+
+.lastCarouselWrapper {
+  margin: 0; }
 
 .steps {
   display: inline-block;
@@ -371,7 +405,6 @@ body {
   height: 240px;
   position: relative;
   text-align: left;
-  margin: 0 0 5px 0;
   -webkit-border-radius: 7px;
           border-radius: 7px;
   border: 1px solid #dadada; }
@@ -499,24 +532,25 @@ body {
 /*      5. discoverIdias         */
 .discoverIdias {
   text-align: center;
-  margin: 0 0 40px 0; }
+  margin: 0 0 44px 0; }
 
 .idia {
   width: 94%;
   height: 120px;
   position: relative;
   display: inline-block;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   border: 1px solid #c1e3d7;
-  margin: 0 auto 7px auto; }
+  margin: 0 auto 7px auto;
+  overflow: hidden; }
   .idia figure {
     height: 100%; }
   .idia img {
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
-    width: 100%;
-    height: 100%; }
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    width: 103%;
+    height: 103%; }
   .idia .idiaText {
     text-align: center;
     z-index: 2;
@@ -532,6 +566,9 @@ body {
       font-size: 21px;
       letter-spacing: -.5px;
       line-height: 27px; }
+
+.idia-7 {
+  margin: 0; }
 
 /*form start*/
 .idiasParag {
@@ -564,7 +601,7 @@ body {
 /*form end*/
 /*      6. FOOTER         */
 .footer {
-  padding: 20px 0;
+  padding: 18px 0;
   border-top: 4px solid #ff4e50;
   text-align: center; }
 
