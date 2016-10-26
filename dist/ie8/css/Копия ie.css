@@ -220,7 +220,11 @@ body {
       margin: 10px 0 29px 25px; }
     header.header .mainHeader {
       width: 50%; }
+
   /*main*/
+
+
+
   /*howItWorks*/
   .howItWorks .stepsWrapper {
     padding: 0 30px 20px 20px; }
@@ -233,6 +237,9 @@ body {
     .howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-next {
       top: 36%;
       right: 5px; }
+
+      
+      !!!!!!!!!!!!!!!!!!!!!!!!!!
   /*meetPartners*/
   .meetPartners {
     padding: 0 5%; }
@@ -336,10 +343,8 @@ body {
   margin: 0 17px 0 21%; }
 
 .signUp {
-  border: 1px solid #fff;
-  border-top: 2px solid #fff;
-  -webkit-border-radius: 40px;
-          border-radius: 40px;
+  border: none;
+  border-top: none;
   padding: 10px 15px; }
 
 /*top links end*/

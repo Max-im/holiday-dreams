@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
@@ -15,11 +12,10 @@
 	<link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.css" />
 	<link rel="stylesheet" href="css/libs.min.css" />
 	<link rel="stylesheet" href="css/style.min.css" />
-	
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
+	<!--[if IE 8]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+<script  src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wrapper">	
@@ -28,7 +24,7 @@
 			HEADER
 
 	================ -->
-	<header class="header">
+	<div class="header">
 		<div class="container">
 
 			<div class="logInBlock">
@@ -40,17 +36,17 @@
 			<p class="discParag">And find the perfect partner to fullfill it</p>
 			<a href="#" class="buttonFindHolliday">Find your holiday partner</a>
 		</div>
-	</header>
+	</div>
 
 	<!-- ================
 
 				MAIN
 
 	================ -->
-	<main>
+	<!-- <main> -->
 
 	<!-- ====howItWorks SECTION===== -->
-	<section class="howItWorks">
+	<div class="howItWorks">
 
 		<div class="container">
 			<h2 class="sectionHeader">How Urlaubsglück works?</h2>
@@ -58,31 +54,31 @@
 			<div class="carouselWrapper">
 				<div id="owl-example1" class="owl-carousel">
 					<!-- === step1 ===-->
-					<section class="steps step1">
+					<div class="steps step1">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 1</p>
 							<h3 class="stepsHeader">Sed leo enim, condimentum</h3>
 							<p class="stepsParag">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
 						</div>
-					</section>
+					</div>
 
 					<!-- === step2 ===-->
-					<section class="steps step2">
+					<div class="steps step2 ieNone">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 2</p>
 							<h3 class="stepsHeader">Morbi velit risus</h3>
 							<p class="stepsParag">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 						</div>
-					</section>
+					</div>
 
 					<!-- === step3 ===-->
-					<section class="steps step3">
+					<div class="steps step3 ieNone">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 3</p>
 							<h3 class="stepsHeader">Sed leo enim, condimentum</h3>
 							<p class="stepsParag">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
 						</div>
-					</section>
+					</div>
 				</div> <!-- carousel -->
 			</div>
 
@@ -90,77 +86,77 @@
 			<div class="carouselWrapper">
 				<div id="owl-example2" class="owl-carousel">
 					<!-- === step2 ===-->
-					<section class="steps step2">
+					<div class="steps step2">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 2</p>
 							<h3 class="stepsHeader">Morbi velit risus</h3>
 							<p class="stepsParag">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 						</div>
-					</section>
+					</div>
 
 					<!-- === step3 ===-->
-					<section class="steps step3">
+					<div class="steps step3 ieNone">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 3</p>
 							<h3 class="stepsHeader">Sed leo enim, condimentum</h3>
 							<p class="stepsParag">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
 						</div>
-					</section>
+					</div>
 
 					<!-- === step1 ===-->
-					<section class="steps step1">
+					<div class="steps step1 ieNone">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 1</p>
 							<h3 class="stepsHeader">Sed leo enim, condimentum</h3>
 							<p class="stepsParag">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
 						</div>
-					</section>
+					</div>
 
 				</div> <!-- carousel -->
 			</div>
 
-			<div class="carouselWrapper lastCarouselWrapper">
+			<div class="carouselWrapper lastCarouselWrapper ">
 				<div id="owl-example3" class="owl-carousel">
 
 					<!-- === step3 ===-->
-					<section class="steps step3">
+					<div class="steps step3">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 3</p>
 							<h3 class="stepsHeader">Sed leo enim, condimentum</h3>
 							<p class="stepsParag">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
 						</div>
-					</section>
+					</div>
 
 					<!-- === step1 ===-->
-					<section class="steps step1">
+					<div class="steps step1 ieNone">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 1</p>
 							<h3 class="stepsHeader">Sed leo enim, condimentum</h3>
 							<p class="stepsParag">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
 						</div>
-					</section>
+					</div>
 
 					<!-- === step2 ===-->
-					<section class="steps step2">
+					<div class="steps step2 ieNone">
 						<div class="stepsWrapper">
 							<p class="stepButton">step 2</p>
 							<h3 class="stepsHeader">Morbi velit risus</h3>
 							<p class="stepsParag">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
 						</div>
-					</section>
+					</div>
 				</div> <!-- carousel --></div>
 			</div> <!-- container -->
-		</section>
+		</div>
 
 		<!-- ====meetPartners SECTION===== -->
-		<section class="meetPartners">
+		<div class="meetPartners">
 			<div class="container">
 				<h2 class="sectionHeader">Meet a partner for your best holiday</h2>
 
 
 				<!--=== partner1 ===-->
 				<div class="partnerWrapper">
-					<section class="partner">
+					<div class="partner">
 						<div class="partnerPhoto">
 							<img src="img/parthner1.png" alt="photo"/>
 							<div class="partnerIcon partnerIcon1">
@@ -168,11 +164,11 @@
 						</div>
 						<p class="partnerName">Bradley Hunter</p>
 						<p class="aboutPartner">Based in Chicago. I love playing tennis and loud music.</p>
-					</section>
+					</div>
 
 
 					<!--=== partner2 ===-->
-					<section class="partner">
+					<div class="partner">
 						<div class="partnerPhoto">
 							<img src="img/parthner2.png" alt="photo"/>
 							<div class="partnerIcon partnerIcon2">
@@ -180,13 +176,13 @@
 						</div>
 						<p class="partnerName">Lucas Marsha</p>
 						<p class="aboutPartner">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards </p>
-					</section>
+					</div>
 				</div>
 
 
 				<!--=== partner3 ===-->
 				<div class="partnerWrapper">
-					<section class="partner">
+					<div class="partner">
 						<div class="partnerPhoto">
 							<img src="img/parthner3.png" alt="photo"/>
 							<div class="partnerIcon partnerIcon3">
@@ -194,10 +190,10 @@
 						</div>
 						<p class="partnerName">Heather Walker</p>
 						<p class="aboutPartner">I'm a happy person that loves cats and climbing on mountains.</p>
-					</section>
+					</div>
 
 					<!--=== partner4 ===-->
-					<section class="partner">
+					<div class="partner">
 						<div class="partnerPhoto">
 							<img src="img/parthner4.png" alt="photo"/>
 							<div class="partnerIcon partnerIcon4">
@@ -205,76 +201,76 @@
 						</div>
 						<p class="partnerName">Bradley Hunter</p>
 						<p class="aboutPartner">Based in Chicago. I love playing tennis and loud music.</p>
-					</section>
+					</div>
 				</div>
 				<a href="#" class="buttonPartners">See other partners</a>
 			</div> <!-- container end -->
-		</section> 
+		</div> 
 
-		<!-- ====. SECTION===== -->
-		<section class="discoverIdias">
+		<!-- ====.discoverIdias SECTION===== -->
+		<div class="discoverIdias">
 			<div class="container">
 				<h2 class="sectionHeader">Discover holiday activity ideas</h2>
 
-				<section class="idias">
+				<div class="idias">
 					<!-- idia-1 -->
-					<article class="idia idia-1">
-						<figure>
+					<div class="idia idia-1">
+						<div>
 							<img src="#" id="ajaxRequest1" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord1" target="_blank" href="#">Sport and Activity</a></figcaption>
-						</figure>
-					</article>
+							<div class="idiaText"><a id="ajaxWord1" target="_blank" href="#">Sport and Activity</a></div>
+						</div>
+					</div>
 
 
 					<!-- idia-2 -->
-					<article class="idia idia-2">
-						<figure>
+					<div class="idia idia-2">
+						<div>
 							<img src="#" id="ajaxRequest2" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord2" target="_blank" href="#">Wellnes and Health</a></figcaption>
-						</figure>
-					</article>
+							<div class="idiaText"><a id="ajaxWord2" target="_blank" href="#">Wellnes and Health</a></div>
+						</div>
+					</div>
 
 					<!-- idia-3 -->
-					<article class="idia idia-3">
-						<figure>
+					<div class="idia idia-3">
+						<div>
 							<img src="#" id="ajaxRequest3" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord3" target="_blank" href="#">Extreme Sports and Expeditions</a></figcaption>
-						</figure>
-					</article>
+							<div class="idiaText"><a id="ajaxWord3" target="_blank" href="#">Extreme Sports and Expeditions</a></div>
+						</div>
+					</div>
 
 					<!-- idia-4 -->
-					<article class="idia idia-4">
-						<figure>
+					<div class="idia idia-4">
+						<div>
 							<img src="#" id="ajaxRequest4" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord4" target="_blank" href="#">Games</a></figcaption>
-						</figure>
-					</article>
+							<div class="idiaText"><a id="ajaxWord4" target="_blank" href="#">Games</a></div>
+						</div>
+					</div>
 
 					<!-- idia-5 -->
-					<article class="idia idia-5">
-						<figure>
+					<div class="idia idia-5">
+						<div>
 							<img src="#" id="ajaxRequest5" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord5" target="_blank" href="#">Culture and Education</a></figcaption>
-						</figure>
-					</article>
+							<div class="idiaText"><a id="ajaxWord5" target="_blank" href="#">Culture and Education</a></div>
+						</div>
+					</div>
 
 
 					<!-- idia-6 -->
-					<article class="idia idia-6">
-						<figure>
+					<div class="idia idia-6">
+						<div>
 							<img src="#" id="ajaxRequest6" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord6" target="_blank" href="#">Relaxation</a></figcaption>
-						</figure>
-					</article>
+							<div class="idiaText"><a id="ajaxWord6" target="_blank" href="#">Relaxation</a></div>
+						</div>
+					</div>
 
 					<!-- idia-7 -->
-					<article class="idia idia-7">
-						<figure>
+					<div class="idia idia-7">
+						<div>
 							<img src="#" id="ajaxRequest7" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord7" target="_blank" href="#">Travelling</a></figcaption>
-						</figure>
-					</article>
-				</section> <!-- idias end -->
+							<div class="idiaText"><a id="ajaxWord7" target="_blank" href="#">Travelling</a></div>
+						</div>
+					</div>
+				</div> <!-- idias end -->
 
 				<h2 class="sectionHeader">Discover holiday activity ideas</h2>
 
@@ -284,15 +280,15 @@
 				<button type="submit" id="search" class="searchButton">Search partners</button>
 				<!-- </form> -->
 			</div> <!-- container end -->
-		</section>
-	</main>
+		</div>
+	<!-- </main> -->
 
 	<!-- ================
 
 			FOOTER
 
 	================ -->
-	<footer class="footer">
+	<div class="footer">
 		<div class="container">
 
 			<div class="footBlock footBlock1">
@@ -321,7 +317,7 @@
 			</div>
 		</div>
 
-	</footer>
+	</div>
 
 	</div>
 
