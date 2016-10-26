@@ -239,27 +239,23 @@
 }
 
 .partnerIcon{
-	width: 30px;
-	height: 30px;
 	position: absolute;
 	bottom: -8px;
 	right: -2px;
 	border: 4px solid #fff;
 	border-radius: 50%;
-	background-size: cover;
-	background-position: center;
 }
 .partnerIcon1{
-	background-image: url(../img/parthnerIcon1.png);	
+	@include sprite($parthner-icon1);
 }
 .partnerIcon2{
-	background-image: url(../img/parthnerIcon2.png);	
+	@include sprite($parthner-icon2);
 }
 .partnerIcon3{
-	background-image: url(../img/parthnerIcon3.png);	
+	@include sprite($parthner-icon3);
 }
 .partnerIcon4{
-	background-image: url(../img/parthnerIcon4.png);	
+	@include sprite($parthner-icon4);
 }
 
 .partnerName{

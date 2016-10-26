@@ -9,6 +9,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
+	spritesmith	 = require('gulp.spritesmith'), //Подключаем сборщик спрайтов
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
@@ -17,6 +18,17 @@ gulp.task('sass', function(){ // Создаем таск Sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 		.pipe(gulp.dest('src/css')) // Выгружаем результата в папку src/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
+
+gulp.task('sprite', function(){
+	var spriteData = gulp.src('src/myFiles/sprite/*.png') //путь к картинкам для спрайта
+		.pipe(spritesmith({
+			imgName: 'iconSprite.png',
+			cssName: 'spriteStyle.scss',
+			algorithm: 'binary-tree'
+		}));
+		spriteData.img.pipe(gulp.dest('src/img')); // путь, куда сохраняем картинку
+	spriteData.css.pipe(gulp.dest('src/sass')); // путь, куда сохраняем стили
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
@@ -62,7 +74,7 @@ gulp.task('min-css',['css-libs'], function(){
 		.pipe(gulp.dest('src/css')); // Выгружаем в папку src/css
 })
 
-gulp.task('watch', ['browser-sync', 'min-css', 'sass', 'scripts' ], function() {
+gulp.task('watch', ['browser-sync', 'min-css', 'sass', 'scripts', 'sprite' ], function() {
 	gulp.watch('src/sass/**/*.scss', ['sass', browserSync.reload]); // Наблюдение за sass файлами в папке sass
 	gulp.watch('src/css/style.css', ['min-css']); // Наблюдение за css файлами в папке css
 	gulp.watch('src/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
