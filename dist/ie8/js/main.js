@@ -1,20 +1,19 @@
-
+(function($) {
      
      
 	// owlCarousel
 	var i = 1;
 	for( i; i < 4; i++ ){
 
-	 jQuery("#owl-example"+i).owlCarousel(
-	 $("owl-example"+i).owlCarousel(
-	 	{
-	 		singleItem:true,
-	 		autoPlay: 4000,
-	 		navigation: true,
-	 		navigationText: false,
-	 		pagination: false
-	 	});
-	 }
+	$("#owl-example"+i).owlCarousel(
+		{
+			singleItem:true,
+			autoPlay: 4000,
+			navigation: true,
+			navigationText: false,
+			pagination: false
+		});
+	}
 
 
 	// masonry
@@ -61,4 +60,4 @@
 	
 
 
-}
+})(jQuery);
