@@ -28,16 +28,16 @@
 			HEADER
 
 	================ -->
-	<header class="header">
+	<header class="header" itemscope itemtype="http://schema.org/TouristInformationCenter">
 		<div class="container">
 
 			<div class="logInBlock">
 				<a href="#" class="logIn">Log in</a>
 				<a href="#" class="signUp">Sign up</a>
 			</div>
-			<p class="headParag">URLAUBSGLÜCK</p>
-			<h1 class="mainHeader">Share your holiday dreams</h1>
-			<p class="discParag">And find the perfect partner to fullfill it</p>
+			<p class="headParag" itemprop="logo">URLAUBSGLÜCK</p>
+			<h1 class="mainHeader" itemprop="name">Share your holiday dreams</h1>
+			<p class="discParag" itemprop="description">And find the perfect partner to fullfill it</p>
 			<a href="#" class="buttonFindHolliday">Find your holiday partner</a>
 		</div>
 	</header>
@@ -160,51 +160,51 @@
 
 				<!--=== partner1 ===-->
 				<div class="partnerWrapper">
-					<section class="partner">
+					<section class="partner" itemscope itemtype="http://schema.org/Person">
 						<div class="partnerPhoto">
-							<img src="img/parthner1.png" alt="photo"/>
-							<div class="partnerIcon partnerIcon1">
+							<img src="img/parthner1.png" itemprop="image" alt="photo"/>
+							<div itemprop="thumbnail" class="partnerIcon partnerIcon1">
 							</div>
 						</div>
-						<p class="partnerName">Bradley Hunter</p>
-						<p class="aboutPartner">Based in Chicago. I love playing tennis and loud music.</p>
+						<p class="partnerName" itemprop="name">Bradley Hunter</p>
+						<p class="aboutPartner" itemprop="description">Based in Chicago. I love playing tennis and loud music.</p>
 					</section>
 
 
 					<!--=== partner2 ===-->
-					<section class="partner">
+					<section class="partner" itemscope itemtype="http://schema.org/Person">
 						<div class="partnerPhoto">
-							<img src="img/parthner2.png" alt="photo"/>
-							<div class="partnerIcon partnerIcon2">
+							<img src="img/parthner2.png" itemprop="image" alt="photo"/>
+							<div itemprop="thumbnail" class="partnerIcon partnerIcon2">
 							</div>
 						</div>
-						<p class="partnerName">Lucas Marsha</p>
-						<p class="aboutPartner">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards </p>
+						<p class="partnerName" itemprop="name">Lucas Marsha</p>
+						<p class="aboutPartner" itemprop="description">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards </p>
 					</section>
 				</div>
 
 
 				<!--=== partner3 ===-->
 				<div class="partnerWrapper">
-					<section class="partner">
+					<section class="partner" itemscope itemtype="http://schema.org/Person">
 						<div class="partnerPhoto">
-							<img src="img/parthner3.png" alt="photo"/>
-							<div class="partnerIcon partnerIcon3">
+							<img src="img/parthner3.png" itemprop="image" alt="photo"/>
+							<div itemprop="thumbnail" class="partnerIcon partnerIcon3">
 							</div>
 						</div>
-						<p class="partnerName">Heather Walker</p>
-						<p class="aboutPartner">I'm a happy person that loves cats and climbing on mountains.</p>
+						<p class="partnerName" itemprop="name">Heather Walker</p>
+						<p class="aboutPartner" itemprop="description">I'm a happy person that loves cats and climbing on mountains.</p>
 					</section>
 
 					<!--=== partner4 ===-->
-					<section class="partner">
+					<section class="partner" itemscope itemtype="http://schema.org/Person">
 						<div class="partnerPhoto">
-							<img src="img/parthner4.png" alt="photo"/>
-							<div class="partnerIcon partnerIcon4">
+							<img src="img/parthner4.png" itemprop="image" alt="photo"/>
+							<div itemprop="thumbnail" class="partnerIcon partnerIcon4">
 							</div>
 						</div>
-						<p class="partnerName">Bradley Hunter</p>
-						<p class="aboutPartner">Based in Chicago. I love playing tennis and loud music.</p>
+						<p class="partnerName" itemprop="name">Bradley Hunter</p>
+						<p class="aboutPartner" itemprop="description">Based in Chicago. I love playing tennis and loud music.</p>
 					</section>
 				</div>
 				<a href="#" class="buttonPartners">See other partners</a>
@@ -218,60 +218,66 @@
 
 				<section class="idias">
 					<!-- idia-1 -->
-					<article class="idia idia-1">
+					<article class="idia idia-1" itemscope itemtype="http://schema.org/ImageObject">
 						<figure>
-							<img src="#" id="ajaxRequest1" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord1" target="_blank" href="#">Sport and Activity</a></figcaption>
+							<img itemprop="image" src="#" id="ajaxRequest1" alt="photo">
+							<figcaption class="idiaText"><a id="ajaxWord1" target="_blank" itemprop="caption" href="#">Sport and Activity</a></figcaption>
+							<meta itemprop="contentUrl" content="#">
 						</figure>
 					</article>
 
 
 					<!-- idia-2 -->
-					<article class="idia idia-2">
+					<article class="idia idia-2" itemscope itemtype="http://schema.org/ImageObject">
 						<figure>
-							<img src="#" id="ajaxRequest2" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord2" target="_blank" href="#">Wellnes and Health</a></figcaption>
+							<img itemprop="image" src="#" id="ajaxRequest2" alt="photo">
+							<figcaption class="idiaText"><a id="ajaxWord2" target="_blank" itemprop="caption" href="#">Wellnes and Health</a></figcaption>
+							<meta itemprop="contentUrl" content="#">
 						</figure>
 					</article>
 
 					<!-- idia-3 -->
-					<article class="idia idia-3">
+					<article class="idia idia-3" itemscope itemtype="http://schema.org/ImageObject">
 						<figure>
-							<img src="#" id="ajaxRequest3" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord3" target="_blank" href="#">Extreme Sports and Expeditions</a></figcaption>
+							<img itemprop="image" src="#" id="ajaxRequest3" alt="photo">
+							<figcaption class="idiaText"><a id="ajaxWord3" target="_blank" itemprop="caption" href="#">Extreme Sports and Expeditions</a></figcaption>
+							<meta itemprop="contentUrl" content="#">
 						</figure>
 					</article>
 
 					<!-- idia-4 -->
-					<article class="idia idia-4">
+					<article class="idia idia-4" itemscope itemtype="http://schema.org/ImageObject">
 						<figure>
-							<img src="#" id="ajaxRequest4" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord4" target="_blank" href="#">Games</a></figcaption>
+							<img itemprop="image" src="#" id="ajaxRequest4" alt="photo">
+							<figcaption class="idiaText"><a id="ajaxWord4" target="_blank" itemprop="caption" href="#">Games</a></figcaption>
 						</figure>
+						<meta itemprop="contentUrl" content="#">
 					</article>
 
 					<!-- idia-5 -->
-					<article class="idia idia-5">
+					<article class="idia idia-5" itemscope itemtype="http://schema.org/ImageObject">
 						<figure>
-							<img src="#" id="ajaxRequest5" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord5" target="_blank" href="#">Culture and Education</a></figcaption>
+							<img itemprop="image" src="#" id="ajaxRequest5" alt="photo">
+							<figcaption class="idiaText"><a id="ajaxWord5" target="_blank" itemprop="caption" href="#">Culture and Education</a></figcaption>
+							<meta itemprop="contentUrl" content="#">
 						</figure>
 					</article>
 
 
 					<!-- idia-6 -->
-					<article class="idia idia-6">
+					<article class="idia idia-6" itemscope itemtype="http://schema.org/ImageObject">
 						<figure>
-							<img src="#" id="ajaxRequest6" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord6" target="_blank" href="#">Relaxation</a></figcaption>
+							<img itemprop="image" src="#" id="ajaxRequest6" alt="photo">
+							<figcaption class="idiaText"><a id="ajaxWord6" target="_blank" itemprop="caption" href="#">Relaxation</a></figcaption>
+							<meta itemprop="contentUrl" content="#">
 						</figure>
 					</article>
 
 					<!-- idia-7 -->
-					<article class="idia idia-7">
+					<article class="idia idia-7" itemscope itemtype="http://schema.org/ImageObject">
 						<figure>
 							<img src="#" id="ajaxRequest7" alt="photo">
-							<figcaption class="idiaText"><a id="ajaxWord7" target="_blank" href="#">Travelling</a></figcaption>
+							<figcaption class="idiaText"><a id="ajaxWord7" target="_blank" itemprop="caption" href="#">Travelling</a></figcaption>
 						</figure>
 					</article>
 				</section> <!-- idias end -->
@@ -292,19 +298,19 @@
 			FOOTER
 
 	================ -->
-	<footer class="footer">
+	<footer itemscope itemtype="http://schema.org/TouristInformationCenter" class="footer">
 		<div class="container">
 
 			<div class="footBlock footBlock1">
-				<h2 class="footerMainHeader">URLAUBSGLÜCK</h2>
+				<h2 itemprop="logo" class="footerMainHeader">URLAUBSGLÜCK</h2>
 			</div>
 			<div class="footBlock footBlock2">
 				<h3 class="footerHeader">Company</h3>
 				<ul class="linksList">
 					<li><a href="#">About</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li itemprop="address"><a href="#">Contacts</a></li>
 					<li><a href="#">Press</a></li>
-					<li><a href="#">Blog</a></li>
+					<li itemprop="blog"><a href="#">Blog</a></li>
 				</ul>
 			</div>
 			<div class="footBlock footBlock3">
