@@ -293,8 +293,6 @@
 }
 
 .idia{
-	height: 120px;
-	width: 300px;
 	margin: 0 0 20px 0;
 	position: relative;
 	border-radius: 5px;
@@ -305,8 +303,7 @@
 	}
 	img{
 		border-radius: 5px;
-		width: 103%;
-		height: 103%;
+		width: 100%;
 	}
 	.idiaText{
 		text-align: center; 
@@ -328,9 +325,7 @@
 	}
 	
 }
-.idia-7{
-	margin: 0;
-}
+
 /*form start*/
 .idiasParag{
 	font-family: "RobotoLight", arial;

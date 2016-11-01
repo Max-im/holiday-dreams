@@ -167,18 +167,9 @@ body {
       margin: -8px auto 0 auto; }
   /*discoverIdias*/
   section.discoverIdias {
-    margin: 0 0 90px 0;
-    /*.grid-item { width: 235px; }*/ }
+    margin: 0 0 90px 0; }
     section.discoverIdias .sectionHeader {
       margin: 93px 0 35px; }
-    section.discoverIdias .idia {
-      height: 310px;
-      /*width: 235px;*/
-      width: 30%; }
-    section.discoverIdias .idia-5, section.discoverIdias .idia-6 {
-      width: 490px; }
-    section.discoverIdias .idia-6, section.discoverIdias .idia-7 {
-      margin: 0; }
     section.discoverIdias .idiasParag {
       margin: 0 0 40px 0; }
     section.discoverIdias #input {
@@ -250,11 +241,6 @@ body {
   /*discoverIdias*/
   section.discoverIdias .sectionHeader {
     margin: 97px 0 37px; }
-  section.discoverIdias .idia {
-    /*width: 235px; */ }
-  section.discoverIdias .idia-5,
-  section.discoverIdias .idia-6 {
-    width: 620px; }
   section.discoverIdias .idiasParag {
     margin: 0 0 36px 0; }
   /*footer*/
@@ -597,8 +583,6 @@ The `sprites` mixin generates identical output to the CSS template
   margin: 0 0 44px 0; }
 
 .idia {
-  height: 120px;
-  width: 300px;
   margin: 0 0 20px 0;
   position: relative;
   -webkit-border-radius: 5px;
@@ -610,8 +594,7 @@ The `sprites` mixin generates identical output to the CSS template
   .idia img {
     -webkit-border-radius: 5px;
             border-radius: 5px;
-    width: 103%;
-    height: 103%; }
+    width: 100%; }
   .idia .idiaText {
     text-align: center;
     z-index: 2;
@@ -628,9 +611,6 @@ The `sprites` mixin generates identical output to the CSS template
       letter-spacing: -.5px;
       line-height: 27px;
       text-transform: capitalize; }
-
-.idia-7 {
-  margin: 0; }
 
 /*form start*/
 .idiasParag {
