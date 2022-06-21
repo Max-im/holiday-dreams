@@ -1,0 +1,634 @@
+/*@import reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline; }
+
+html {
+	line-height: 1; }
+
+ol, ul {
+	list-style: none; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle; }
+
+q, blockquote {
+	quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none; }
+
+a img {
+	border: none; }
+
+a {
+	text-decoration: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block; }
+
+/*!!!!!!!!!!!!*/
+body {
+	font-family: 'Montserrat', 'RobotoLight', sans-serif, arial;
+	font-weight: bold; }
+
+/*@import fonts*/
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; }
+
+/* font-family: "RobotoLight"; */
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; }
+
+/* font-family: "RobotoMedium"; */
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; }
+
+/* font-family: "RobotoBold"; */
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; }
+
+/*@import media*/
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* @media only screen and (min-width: 768px) {
+	div .container {
+		width: 768px; }
+	h2.sectionHeader {
+		margin: 100px 0 35px; }
+	header
+	header.header {
+		padding-top: 40px;
+		padding: 40px 0 245px 0; }
+		header.header .logInBlock {
+			float: right;
+			margin: 0 53px 140px 0; }
+			header.header .logInBlock .logIn {
+				margin: 0 17px 0 0; }
+		header.header .headParag {
+			float: left;
+			margin: 10px 0 29px 45px; }
+		header.header .mainHeader {
+			font-size: 52px;
+			line-height: 62px;
+			clear: both;
+			margin: 0 auto 30px auto;
+			width: 70%;
+			letter-spacing: -1.5px; }
+		header.header .discParag {
+			font-size: 24px;
+			margin: 0 auto 48px auto; }
+		header.header .buttonFindHolliday {
+			padding: 10px 20px; }
+	main
+	howItWorks
+	.howItWorks .steps {
+		width: 31%;
+		height: 400px;
+		margin: 0 10px 0 0; }
+	.howItWorks .step3 {
+		margin: 0; }
+	.howItWorks .carouselWrapper {
+		width: 31%;
+		display: inline-block;
+		height: 240px;
+		margin: 0 7px 10px 5px; }
+		.howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-prev {
+			top: 8%;
+			display: inline-block; }
+		.howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-next {
+			top: 8%;
+			right: 0;
+			display: inline-block; }
+	meetPartners
+	.meetPartners {
+		padding: 0 5%; }
+		.meetPartners .sectionHeader {
+			margin: 93px 0 35px; }
+		.meetPartners .partnerWrapper {
+			width: 33%;
+			display: inline-block;
+			vertical-align: top; }
+		.meetPartners .partner {
+			text-align: center;
+			padding: 0 15px 50px; }
+		.meetPartners .buttonPartners {
+			display: block;
+			width: 190px;
+			padding: 10px 0;
+			margin: -8px auto 0 auto; }
+	discoverIdias
+	section.discoverIdias {
+		margin: 0 0 90px 0;
+		.grid-item { width: 235px; } }
+		section.discoverIdias .sectionHeader {
+			margin: 93px 0 35px; }
+		section.discoverIdias .idia {
+			height: 310px;
+			width: 235px;
+			width: 30%; }
+		section.discoverIdias .idia-5, section.discoverIdias .idia-6 {
+			width: 490px; }
+		section.discoverIdias .idia-6, section.discoverIdias .idia-7 {
+			margin: 0; }
+		section.discoverIdias .idiasParag {
+			margin: 0 0 40px 0; }
+		section.discoverIdias #input {
+			width: 240px; }
+		section.discoverIdias .searchButton {
+			padding: 10px 25px; }
+	footer
+	footer.footer {
+		padding: 40px 0; }
+		footer.footer div.footBlock {
+			display: inline-block;
+			vertical-align: top;
+			width: 23%; }
+		footer.footer .linksList li {
+			display: block;
+			text-align: left;
+			margin: 10px 0 0 60px; }
+		footer.footer .designBy {
+			margin: 0px 0px 3px 55px; }
+		footer.footer .logoLink {
+			margin: 0px 0px 0px 30px; } }
+
+Medium Devices, Desktops
+@media only screen and (min-width: 992px) {
+	div.wrapper {
+		width: 1440px; }
+	div .container {
+		width: 992px; }
+	header
+	header.header {
+		padding-top: 40px;
+		padding: 40px 0 245px 0; }
+		header.header .logInBlock {
+			float: right;
+			margin: 0 30px 140px 0; }
+			header.header .logInBlock .logIn {
+				margin: 0 17px 0 0; }
+		header.header .headParag {
+			margin: 10px 0 29px 25px; }
+		header.header .mainHeader {
+			width: 50%; }
+	main
+	howItWorks
+	.howItWorks .stepsWrapper {
+		padding: 0 30px 20px 20px; }
+	.howItWorks .carouselWrapper {
+		width: 30%;
+		margin: 0 9px 10px 9px; }
+		.howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-prev {
+			top: 36%;
+			left: 5px; }
+		.howItWorks .carouselWrapper .owl-theme .owl-controls .owl-buttons .owl-next {
+			top: 36%;
+			right: 5px; }
+	meetPartners
+	.meetPartners {
+		padding: 0 5%; }
+		.meetPartners .sectionHeader {
+			margin: 93px 0 35px; }
+		.meetPartners .partnerWrapper {
+			width: 49%; }
+		.meetPartners .partner {
+			width: 49%;
+			vertical-align: top;
+			display: inline-block;
+			padding: 0 15px 35px; }
+		.meetPartners .buttonPartners {
+			margin: 0px auto 0 auto; }
+	discoverIdias
+	section.discoverIdias .sectionHeader {
+		margin: 97px 0 37px; }
+	section.discoverIdias .idia {
+		width: 235px; }
+	section.discoverIdias .idia-5,
+	section.discoverIdias .idia-6 {
+		width: 620px; }
+	section.discoverIdias .idiasParag {
+		margin: 0 0 36px 0; }
+	footer
+	footer.footer {
+		padding: 40px 0;
+		margin: 0; }
+		footer.footer div.footBlock1 {
+			width: 24%;
+			text-align: left; }
+		footer.footer div.footBlock2 {
+			width: 14%;
+			text-align: left; }
+		footer.footer div.footBlock3 {
+			width: 10%;
+			text-align: left; }
+		footer.footer div.footBlock4 {
+			width: 46%;
+			text-align: right; }
+		footer.footer .footerHeader {
+			margin: 0 0 16px 3px; }
+		footer.footer .linksList li {
+			margin: 7px 0 0 0px; } } */
+
+/* Large Devices, Wide Screens */
+/*@import var and mixin*/
+/*colors*/
+/*======================
+|		STYLE MAP      |
+========================
+1. common part
+2. header
+3. howItWorks SECTION
+4. meetPartners SECTION
+5. discoverIdias
+6. FOOTER
+
+======================*/
+/*      1. common part       */
+.wrapper {
+	width: 100%;
+	margin: 0 auto; }
+
+.container {
+	width: 992px;
+	margin: 0 auto; }
+
+.sectionHeader {
+	font-size: 22px;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	margin: 37px 0 15px 0;
+	letter-spacing: -.8px;
+	display: inline-block;
+	width: 97%; }
+
+.ieNone {
+	display: none !important;  
+}
+
+/*      2. header           */
+.header {
+	width: 100%;
+	background: url(../img/head.jpg) no-repeat;
+	background-position: top;
+	padding: 40px 0px 245px 0px;
+	color: #fff;
+	text-align: center;
+}
+
+/*top links start*/
+.logInBlock {
+	float: right;
+	margin: 0 30px 140px 0;
+	text-align: left; }
+	.logInBlock a {
+		color: #fff;
+		font-size: 14px;
+		display: inline-block; }
+
+.logIn {
+	margin: 0 17px 0 0; }
+
+.signUp {
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding: 10px 15px; }
+
+/*top links end*/
+/*main text start*/
+.headParag {
+	font-size: 20px;
+	float: left;
+	margin: 10px 0 29px 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px; }
+
+.mainHeader {
+	margin: 0 0 10px 0;
+	font-size: 52px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	line-height: 62px;
+	clear: both;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.discParag {
+	width: 70%;
+	margin: 0 auto 48px auto;
+	font-family: "RobotoLight", arial;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20px; }
+
+/*main text end*/
+/*button start*/
+.buttonFindHolliday {
+	background: #ff4e50;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 14px; }
+
+/*button end*/
+/*      3. howItWorks SECTION      */
+.howItWorks {
+	text-align: center; }
+
+	.owl-carousel{
+		display: block !important;
+	}
+
+.carouselWrapper {
+	width: 30%;
+	height: 400px !important;
+	margin: 0 9px 10px 9px; 
+	display: inline-block;
+	}
+
+
+
+.steps {
+	display: inline-block;
+	width: 100%;
+	height: 400px;
+	position: relative;
+	text-align: left;
+	border: 1px solid #dadada; }
+
+.stepsWrapper {
+	padding: 0 23px 20px 20px;
+	position: absolute;
+	bottom: 0; }
+
+.stepButton {
+	display: inline-block;
+	background: #ff4e50;
+	margin: 0 0 15px 2px;
+	padding: 5px 11px;
+	color: #fff;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: normal; }
+
+.stepsHeader {
+	color: #fff;
+	font-size: 24px;
+	margin: 0 0 10px 0;
+	line-height: 29px;
+	letter-spacing: -.5px; }
+
+.stepsParag {
+	display: block;
+	color: #ccc;
+	font-family: "RobotoLight", arial;
+	font-weight: lighter;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: -.5px;
+	text-align: justify; }
+
+.step1 {
+	background: url(../img/step1.jpg);
+	background-size: cover;
+	background-position: center; }
+
+.step2 {
+	background: url(../img/step2.jpg);
+	background-size: cover;
+	background-position: center; }
+
+.step3 {
+	background: url(../img/step3.jpg);
+	background-size: cover;
+	background-position: center;
+	margin: 0; }
+
+/*      4. meetPartners SECTION         */
+.meetPartners {
+	text-align: center; 
+	padding: 0 5%; }
+
+.partner {
+	padding: 0 50px 27px 50px;
+	width: 49%;
+	display: inline-block;
+	vertical-align: top; }
+
+.partnerPhoto {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto 22px auto;
+	position: relative; }
+	.partnerPhoto img {
+		width: 100%; }
+
+.meetPartners .partnerWrapper {
+			width: 49%; 
+			display: inline-block;
+			vertical-align: top;}
+
+.partnerIcon {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	bottom: -8px;
+	right: -2px;
+	border: none;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; }
+
+.partnerIcon1 {
+	background-image: url(../img/parthnerIcon1.png); }
+
+.partnerIcon2 {
+	background-image: url(../img/parthnerIcon2.png); }
+
+.partnerIcon3 {
+	background-image: url(../img/parthnerIcon3.png); }
+
+.partnerIcon4 {
+	background-image: url(../img/parthnerIcon4.png); }
+
+.partnerName {
+	color: #333;
+	font-size: 14px;
+	text-transform: capitalize;
+	margin: 0 0 15px 0; }
+
+.aboutPartner {
+	font-size: 14px;
+	font-family: "RobotoLight", arial;
+	font-weight: lighter;
+	color: #666;
+	line-height: 16px; }
+
+.buttonPartners {
+	display: inline-block;
+	color: #ff4e50;
+	-webkit-border-radius: 30px;
+					border-radius: 30px;
+	border: 3px solid #ff4e50;
+	padding: 10px 70px;
+	font-size: 14px;
+	margin: 0 0 5px 0; }
+
+/*      5. discoverIdias         */
+.discoverIdias {
+	text-align: center;
+	margin: 0 0 44px 0; }
+
+.idia {
+	height: 120px;
+	width: 245px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 20px 0;
+	position: relative;
+	-webkit-border-radius: 5px;
+					border-radius: 5px;
+	border: 1px solid #c1e3d7;
+	overflow: hidden; }
+	
+.discoverIdias .idia-5,
+.discoverIdias .idia-6 {
+	width: 500px; 
+}
+
+	.idia img {
+		-webkit-border-radius: 5px;
+						border-radius: 5px;
+		width: 103%;
+		height: 103%; }
+	.idia .idiaText {
+		text-align: center;
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		height: 25px; }
+		.idia .idiaText a {
+			color: #fff;
+			font-size: 21px;
+			letter-spacing: -.5px;
+			line-height: 27px;
+			text-transform: capitalize; }
+
+.idia-7 {
+	margin: 0; }
+
+/*form start*/
+.idiasParag {
+	font-family: "RobotoLight", arial;
+	font-weight: normal;
+	font-size: 18px;
+	margin: 0 0 20px 0; }
+
+#input {
+	width: 280px;
+	padding: 10px 15px;
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+					border-radius: 5px;
+	margin: 0 0 10px 0; }
+
+.searchButton {
+	color: #fff;
+	background: #ff4e50;
+	border: none;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 10px 80px;
+	-webkit-border-radius: 30px;
+					border-radius: 30px; }
+
+/*form end*/
+/*      6. FOOTER         */
+.footer {
+	padding: 18px 0;
+	border-top: 4px solid #ff4e50;
+	text-align: center; }
+
+.footerMainHeader {
+	margin: 0 0 13px 0;
+	color: #ff4e50;
+	text-transform: uppercase;
+	font-size: 16px; }
+
+.footerHeader {
+	font-size: 14px;
+	color: #333;
+	margin: 0 0 5px 0; }
+
+.linksList li {
+	display: inline-block;
+	margin: 0 0 15px 0; }
+	.linksList li a {
+		color: #666;
+		font-family: "RobotoLight", arial;
+		font-weight: 300; }
+
+.designBy {
+	margin: 12px 0 10px 0; }
+	.designBy a {
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #ccc;
+		letter-spacing: 1px; }
